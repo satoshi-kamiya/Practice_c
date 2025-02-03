@@ -6,8 +6,8 @@ auto output_all = [](auto begin,auto end){
 
 int main()
 {
-    std::filesystem::directory_iterator first("./"), last ;
+    std::vector<int> v = {1,2,3,4,5};
 
-    output_all( first, last );
+    output_all( std::begin(v), std::end(v) );
 
 }
